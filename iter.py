@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from collections import Iterable
+from collections import Iterator
 # 迭代
 # 迭代一个对象
 d = {'a': 1, 'b': 2, 'c': 3}
@@ -40,3 +41,11 @@ for x, y in [(1, 1), (2, 4), (3, 9)]:
 	# 1 1
 	# 2 4
 	# 3 9
+
+
+# Iterator 迭代器
+print(isinstance([], Iterator)) # False
+print(isinstance((x for x in range(10)), Iterator)) # True
+
+# iter()方法可以把Iterable变成Iterator
+print(isinstance(iter([]), Iterator)) # True
