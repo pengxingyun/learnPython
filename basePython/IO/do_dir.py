@@ -33,7 +33,7 @@ os.rmdir(pt)
 os.path.split('/Users/pengxingyun/github/learnPython/basePython/IO/testdir') # ('/Users/pengxingyun/github/learnPython/basePython/IO', 'testdir')
 
 # 获取文件后缀名
-os.path.split('/Users/pengxingyun/github/learnPython/basePython/IO/test.txt') # ('/Users/pengxingyun/github/learnPython/basePython/IO', '.txt')
+os.path.splitext('/Users/pengxingyun/github/learnPython/basePython/IO/test.txt') # ('/Users/pengxingyun/github/learnPython/basePython/IO', '.txt')
 
 # 重命名文件
 os.rename('test.txt', 'test1.txt')
