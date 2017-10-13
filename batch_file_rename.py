@@ -13,6 +13,7 @@ __version__ = '1.0'
 # argparse用来获取命令行的输入 sys.argv的更高级做法
 import os,argparse
 
+# os.path.abspath = os.getcwd()
 default_dir = os.path.abspath('.')
 def batch_rename(work_dir = default_dir, old_ext = '.txt', new_ext = '.py'):
 	'''
